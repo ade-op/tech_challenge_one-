@@ -27,7 +27,7 @@ pipeline {
             }
         }
 
-        stage('Authenticate to ECR') {
+        stage('Authenticate to ECR') {         
             steps {
                 withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-jenkins-credentials']]) {
                     script {

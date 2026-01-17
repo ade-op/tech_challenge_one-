@@ -1,4 +1,4 @@
 const config = {
-  backendUrl: "http://backend:8080",
+  backendUrl: "http://<ALB-DNS>/api"
 };
 export default config;
